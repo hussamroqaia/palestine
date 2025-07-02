@@ -128,7 +128,7 @@ section:nth-child(3) p {
 }
 section:nth-child(3) button {
   border-radius: 7px;
-  background-color: #DCA854;
+  background-color: #dca854;
   padding: 20px;
   border: none;
   width: 150px;
@@ -136,16 +136,15 @@ section:nth-child(3) button {
   font-size: 1.3rem;
   font-weight: 500;
   font-family: "Vazirmatn", sans-serif;
-  
 }
 
 section:nth-child(4) {
   padding: 50px 100px;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
 }
 
 section:nth-child(4) h2 {
-  color: #DCA854;
+  color: #dca854;
   font-size: 3rem;
   text-align: center;
   padding-bottom: 50px;
@@ -153,7 +152,15 @@ section:nth-child(4) h2 {
 .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
+}
+.cards-donate {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  color: white;
 }
 
 .card {
@@ -162,50 +169,126 @@ section:nth-child(4) h2 {
   gap: 20px;
   box-shadow: 0px 0px 10px #485057;
   border-radius: 20px;
-  width: 30%;
+  max-width: 500px;
+}
+.card-donate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
 
+  gap: 20px;
+  box-shadow: 0px 0px 10px #485057;
+  border-radius: 20px;
+  max-width: 500px;
+  height: 500px;
+  padding: 20px;
 }
 
-.card button:nth-child(2) {
+.card-donate h3 {
+  align-items: center;
+  align-self: center;
+  font-size: xx-large;
+}
+
+.card-donate p {
+  align-items: center;
+  align-self: center;
+  font-size: 25px
+}
+
+
+.one {
+  background-image: url(./imgs/Untitled-design-9-340x340.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+.two {
+  background-image: url(./imgs/Untitled-design-7-1-340x340.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+.three {
+  background-image: url(./imgs/Untitled-design-8-1-340x340.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+
+.donate h2 {
+  text-align: center;
+  font-size: 45px;
+  margin: 20px 0;
+}
+
+.donate {
+  margin-bottom: 50px;
+}
+
+.card-donate button {
   padding: 10px;
-  width: 100px;
-  background-color: #DDB570;
+  width: 455px;
+  background-color: #544b3c;
   border: none;
   border-radius: 50px;
   color: white;
   font-family: "Vazirmatn", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
-margin-right: 20px;  
+  /* margin-right: 20px; */
+  cursor: pointer;
+}
+
+.card-donate button:hover {
+  color: #544b3c;
+  background-color: rgba(255, 255, 255, 0.486);
+  transition: all .2s;
+
+
+}
+.card button:nth-child(2) {
+  padding: 10px;
+  width: 100px;
+  background-color: #ddb570;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-right: 20px;
 }
 
 .card h3 {
   font-size: 1.7rem;
   font-weight: 700;
-margin-right: 20px;  
-
-
+  margin-right: 20px;
 }
 
 .card p {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #575756  ;
-margin-right: 20px;  
-padding-left: 10px;
-
-
+  color: #575756;
+  margin-right: 20px;
+  padding-left: 10px;
 }
 
 .card img {
-  border-radius: 20px 20px 0 0    ;
-
+  border-radius: 20px 20px 0 0;
 }
 
 .card button:nth-child(5) {
   padding: 10px;
   width: 90%;
-  background-color: #183B4E;
+  background-color: #183b4e;
   border: none;
   border-radius: 10px;
   color: white;
@@ -214,7 +297,6 @@ padding-left: 10px;
   font-size: 1.3rem;
   align-self: center;
   margin-bottom: 20px;
-  
 }
 
 .img-card {
@@ -236,7 +318,6 @@ padding-left: 10px;
 
 .footer-copyright {
   background-color: #212429;
-
 }
 
 .crds-footr h2 {
@@ -256,7 +337,6 @@ padding-left: 10px;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.522);
   font-weight: 200;
-
 }
 
 .crds-footr div nav {
@@ -270,18 +350,18 @@ padding-left: 10px;
   color: #ffffff71;
   font-size: 1.5rem;
   font-weight: 200;
-}  
+}
 .end span {
   color: #ffffff71;
   font-size: 1.5rem;
   font-weight: 200;
-} 
+}
 .end a {
   color: #ffffff71;
   font-size: 1.5rem;
   font-weight: 200;
   text-decoration: none;
-} 
+}
 .aa {
   margin-top: 25px;
   display: flex;
